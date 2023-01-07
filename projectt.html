@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+
+    <body>
+      
+      </form>
+        
+      <textarea id="ab">
+
+      </textarea>
+<p id="abhinav"></p>        
+ <!--
+
+ 
+ <p id="xy">Hi there</p>
+-->
+ <button id="btn">click here for UpperCase</button>
+ <button id="btn1">click here for lowerCase</button>
+
+ <button id="btn2">
+  Click Here
+ </button>
+
+ <button id="btn4" onclick="vh()">clikcc here</button>
+ 
+
+    </body>
+
+    <script>
+       
+
+       function myFunc(){
+       cd= document.getElementById("ab").value;
+       let text=cd.toUpperCase()
+       document.getElementById("ab").value=text
+       
+      
+       }
+
+       const abc=document.getElementById("btn");
+       abc.addEventListener('click',myFunc);
+
+
+
+
+       function lowCase(){
+         ad=document.getElementById("ab").value;
+         let txt=ad.toLowerCase();
+         document.getElementById("ab").value=txt;
+       }
+
+       const dc=document.getElementById("btn1");
+       dc.addEventListener('click', lowCase)
+
+    </script>
+
+
+
+<script>
+function rndm(){
+  document.getElementById("abhinav").innerHTML=Math.floor(Math.random()*8);
+}
+let vv=document.getElementById("btn2");
+vv.addEventListener('click', rndm);
+</script>
+
+
+
+<script>
+  function vh(){
+  document.getElementById("abhinav").innerHTML=Math.floor(Math.random()*10);
+
+  }
+  // let vhh=document.getElementById("btn4");
+  // vhh.addEventListener('click', vh)
+</script>
+</html>
